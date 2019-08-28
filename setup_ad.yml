@@ -1,0 +1,9 @@
+---
+- name: Setup AD Functionality on a Windows Server
+  hosts: windows
+  gather_facts: false
+  
+  roles: 
+    - MattWin1
+
+
