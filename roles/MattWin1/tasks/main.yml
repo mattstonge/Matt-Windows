@@ -1,8 +1,4 @@
----
-# tasks file for MattWin1
-
-- name: Windows Active Directory Installation
-  hosts: windows
+- name: Install AD-Domain-Services feature
   win_feature:
     name: AD-Domain-Services
     include_management_tools: yes
@@ -23,4 +19,4 @@
   register: domain_list
 
 - debug:
-    var: domain_list
+   var: domain_list
